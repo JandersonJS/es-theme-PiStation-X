@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background" extra="true">
+      <tile>false</tile>
+      <linearSmooth>true</linearSmooth>
+      <path>./../background/bg.png</path>
+      <color>FFFFFFFF</color>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <minSize>1 1</minSize>
+      <zIndex>11</zIndex>
+    </image>
+
+    <image name="ControllerOverlay" extra="true">
+      <path>./../consoles/default.png</path>
+      <path>./../consoles/${system.theme}.png</path>
+      <linearSmooth>true</linearSmooth>
+      <origin>0 0</origin>
+      <pos>0.685 0.595</pos>
+      <maxSize>0.3 0.3</maxSize>
+      <color>FFFFFFF0</color>
+      <zIndex>21</zIndex>
+    </image>
+
+    <image name="ControllerOverlay" extra="true" region="eu"></image>
+	<image name="ControllerOverlay" extra="true" region="us">
+	<path>./main/consoles/us/${system.theme}.png</path>
+    </image>
+		
+    <image name="ControllerOverlay" extra="true" region="jp">
+	<path>./main/consoles/jp/${system.theme}.png</path>
+    </image>
+
+    <image name="staticBackground" extra="true">
+      <tile>true</tile>
+      <size>0 1</size>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <path>./main/background/bg.png</path>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>10</zIndex>
+    </image>
+
+  </view>
+</theme>

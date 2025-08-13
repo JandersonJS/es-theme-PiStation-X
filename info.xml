@@ -1,0 +1,87 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+  <!-- Subset options for color  -->
+  <subset name="colorset" displayName="${subset.colorset}">
+    <include name="gray" displayName="${gray}">./main/colors/gray.xml</include>
+    <include name="blue" displayName="${blue}">./main/colors/blue.xml</include>
+    <include name="red" displayName="${red}">./main/colors/red.xml</include>
+    <include name="green" displayName="${green}">./main/colors/green.xml</include>
+    <include name="yellow" displayName="${yellow}">./main/colors/yellow.xml</include>
+    <include name="violet">./main/colors/violet.xml</include>
+    <include name="cyan">./main/colors/cyan.xml</include>
+    <include name="orange">./main/colors/orange.xml</include>
+    <include name="brawn">./main/colors/brawn.xml</include>
+    <include name="silver">./main/colors/silver.xml</include>
+  </subset>
+
+
+   <!--BARRA DE INFORMACION SUPERIOR-->
+
+  <view name="system">
+
+      <text name="systemInfo">
+         <visible>true</visible>
+      </text>
+
+    <image name="infoBar" extra="static">
+      <pos>0.68 0.08</pos>
+      <origin>0 0</origin>
+      <path>./main/media/avatar.png</path>
+      <color>${baseColor}</color>
+      <size>0 0.2</size>
+      <zIndex>50</zIndex>
+      <visible>true</visible>
+      <linearSmooth>true</linearSmooth>
+    </image>
+
+      <image name="avatar" extra="static">
+         <path>./main/avatars/${image.avatar}.png</path>
+         <path ifSubset="system-avatar:custom">./custom-avatar.png</path>
+         <pos>0.691 0.0987</pos>
+         <minSize>0.16 0.16</minSize>
+         <maxSize>0.16 0.16</maxSize>
+         <zIndex>99</zIndex>
+         <linearSmooth>true</linearSmooth>
+      </image>
+
+      <webimage name="avatar"  extra="static" if="{global.cheevos} == true" ifSubset="system-avatar:cheevos">
+         <path>https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path>
+         <pos>0.691 0.0987</pos>
+         <maxSize>0.16 0.16</maxSize>
+         <zIndex>99</zIndex>
+         <linearSmooth>true</linearSmooth>
+       </webimage>
+       
+      <text name="username" extra="static">
+         <text>${theme.nick}</text>
+         <text ifSubset="system-username:custom">${custom.nick}</text>
+         <pos>0.792 0.002</pos>
+         <size>0.87 0.35</size>
+         <color>ffffff</color>
+         <fontPath>./main/fonts/playstation_by_lyricwest_dby5il4.ttf</fontPath>
+         <fontSize>0.05</fontSize>
+         <alignment>left</alignment>
+         <glowColor>00000035</glowColor>
+         <glowSize>1</glowSize>
+         <glowOffset>3 2</glowOffset>
+         <autoScroll>horizontal</autoScroll>
+         <zIndex>99</zIndex>
+         <backgroundColor>ff000000</backgroundColor>
+      </text>
+   </view>
+
+  <view name="screen">
+      <image name="clock-picto" extra="static">
+         <path>./main/images/clock.png</path>
+         <pos>0.9399 0.962</pos>
+         <maxSize>0.030</maxSize>
+         <color>ffffff</color>
+         <verticalAlignment>top</verticalAlignment>
+         <alignment>left</alignment>
+         <linearSmooth>true</linearSmooth>
+         <zIndex>99</zIndex>
+      </image>
+
+   </view>
+</theme>

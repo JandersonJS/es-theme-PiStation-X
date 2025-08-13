@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+	<view name="splash">
+
+		<splash name="splash">
+			<backgroundColor>000000FF</backgroundColor>
+		</splash>
+		<image name="background">
+			<path>./main/background/splash.jpg</path>
+		</image>
+
+		<text name="label" extra="true">
+			<origin>0 0</origin>
+			<fontPath>./main/fonts/PhatBoy Slim BoldItalic.otf</fontPath>
+			<fontSize>0.023</fontSize>
+			<color>000000</color>
+			<forceUppercase>true</forceUppercase>
+		</text>		
+		
+		    <image name="progressbar">
+		      <path>./main/media/progress.png</path>
+		      <origin>0 0</origin>
+		      <pos>0.05 0.86</pos>
+		      <size>0.9 0.016</size>
+		      <color>6060607F</color>
+		      <colorEnd>6060607F</colorEnd>
+		    </image>
+		    <image name="progressbar:active">
+		      <tile>true</tile>
+		      <color>4a8d35</color>
+		      <colorEnd>4a8d35</colorEnd>
+		    </image>
+		
+	</view>
+	
+</theme>
