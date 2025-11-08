@@ -209,6 +209,7 @@ license: creative commons CC-BY-NC-SA
       <glowSize>1</glowSize>
       <glowOffset>3 2</glowOffset>
       <autoScroll>horizontal</autoScroll>
+      <autoScrollDelay>0</autoScrollDelay>
       <visible>true</visible>
       <zIndex>99</zIndex>
       </text>
